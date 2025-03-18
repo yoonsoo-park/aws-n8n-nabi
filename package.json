@@ -1,0 +1,31 @@
+{
+  "name": "@ncino/n8n-nabi",
+  "version": "0.1.0",
+  "description": "AWS CDK infrastructure for n8n integration with MCP server",
+  "main": "dist/bin/n8n-nabi.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "aws:deploy": "cdk deploy N8n-Nabi-Stack-$(whoami | tr -d .) -c devMode=true -c suffix=$(whoami | tr -d .) -c deploymentStage=blue -c temporary=true --require-approval never"
+  },
+  "dependencies": {
+    "@ncino/aws-cdk": "^3.94.3",
+    "@ncino/aws-sdk": "^3.63.2",
+    "aws-cdk-lib": "^2.181.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

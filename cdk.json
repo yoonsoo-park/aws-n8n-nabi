@@ -1,0 +1,11 @@
+{
+  "app": "npx ts-node bin/n8n-nabi.ts",
+  "context": {
+    "appName": "N8n-Nabi",
+    "repo": "aws-n8n-nabi",
+    "tags": {
+      "owner": "yoonsoo.park@ncino.com",
+      "project": "nabi"
+    }
+  }
+}

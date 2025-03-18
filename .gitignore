@@ -1,0 +1,21 @@
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# IDE and OS files
+.idea
+.vscode
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage 
