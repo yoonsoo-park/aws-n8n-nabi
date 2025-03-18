@@ -75,3 +75,10 @@ npm run aws:deploy
 - Deployed resources have consistent naming with prefixes
 - Stack outputs exported for reference
 - Health checks configured for all services
+
+## TODO
+
+- [ ] Add MCP server to the infrastructure
+- [ ] Add CI/CD pipeline to build and push the MCP server image to this repository
+- [ ] There are multiple TODOs in the codebase, I'm not sure the account has permissions to create all the resources. <-- this is a pain point....
+  - e.g. VPC, creating secrets, clusters, security groups, load balancers, etc.
